@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function AchievementsPage() {
@@ -11,36 +10,36 @@ export default function AchievementsPage() {
       </Link>
 
       <h1 className="text-4xl font-extrabold text-green-900 text-center mb-10">
-        📚 Achievements & Accomplishment Reports
+        Achievements & Accomplishment Reports
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {/* Achievement Card 1 */}
+        {/* Card 1 */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
           <h2 className="text-xl font-bold text-green-800 mb-2">✔ 2024 SK Project EduKit</h2>
           <p className="text-green-700 text-sm mb-3">Distributed over 500 school kits to Taloc youth. A continued commitment to education support.</p>
-          <button className="text-sm text-green-600 hover:underline">Download Report</button>
+          <Link href="/achievements/edukit-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
 
-        {/* Achievement Card 2 */}
+        {/* Card 2 */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
           <h2 className="text-xl font-bold text-green-800 mb-2">✔ Summer Job Program 2024</h2>
           <p className="text-green-700 text-sm mb-3">Provided job experience and allowance to more than 50 students during summer break.</p>
-          <button className="text-sm text-green-600 hover:underline">Download Summary</button>
+          <Link href="/achievements/summer-job-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
 
-        {/* Achievement Card 3 */}
+        {/* Card 3 */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
           <h2 className="text-xl font-bold text-green-800 mb-2">✔ Youth Leadership Camp 2023</h2>
           <p className="text-green-700 text-sm mb-3">A 3-day camp that trained future leaders through workshops, team-building, and civic immersion.</p>
-          <button className="text-sm text-green-600 hover:underline">View Photos</button>
+          <Link href="/achievements/youth-camp-2023" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
 
-        {/* Achievement Card 4 */}
+        {/* Card 4 */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
           <h2 className="text-xl font-bold text-green-800 mb-2">✔ Barangay Clean-Up Drive</h2>
           <p className="text-green-700 text-sm mb-3">A successful initiative that mobilized over 100 youth volunteers for environmental action.</p>
-          <button className="text-sm text-green-600 hover:underline">Read Report</button>
+          <Link href="/achievements/clean-up-drive" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
       </div>
 

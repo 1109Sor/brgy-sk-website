@@ -104,13 +104,13 @@ export default function Home() {
             <h3 className="text-xl font-bold text-green-800 mb-2">🎉 Linggo ng Kabataan</h3>
             <p className="text-sm text-green-700">Celebrate youth empowerment with week-long activities filled with competitions, workshops, and community initiatives. Details will be announced soon. Stay tuned!</p>
           </div>
-    <a href="/achievements" className="hover:underline">Achievements</a>
+    <a href="/achievements" className="hover:underline">View all Achievements</a>
         </div>
       </section>
 
       {/* 🔵 GALLERY */}
       <section id="gallery" className="min-h-screen bg-white flex items-center justify-center flex-col p-8 text-center text-green-950">
-        <h2 className="text-3xl font-bold mb-6">📸 Achievements & Past Activities</h2>
+        <h2 className="text-3xl font-bold mb-6">Achievements & Past Activities</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
           <div className="bg-green-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <Image src="/Ytaloc.jpg" alt="Y'Taloc Xperience" width={300} height={200} className="rounded-md" />
