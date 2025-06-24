@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Edukit2024Page() {
-  const imageNames = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+  const imageNames = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg","6.jpg", "7.jpg" , "8.jpg"];
 
   return (
     <div className="min-h-screen bg-white font-poppins py-12 px-6">
