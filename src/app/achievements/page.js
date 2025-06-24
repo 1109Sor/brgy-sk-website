@@ -37,15 +37,55 @@ export default function AchievementsPage() {
       </div>
 
       {/* ==== 2024 ==== */}
-      <h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2024</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+{/* ==== 2024 ==== */}
+<h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2024</h2>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+  
+  {/* Pasidungog 2024 */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ Pasidungog 2024</h3>
+    <p className="text-green-700 text-sm mb-3">A milestone event honoring youth and community excellence with the theme “Igniting the Future, Honoring Excellence.”</p>
+    <Link href="/achievements/pasidungog-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
+
+  {/* Basketball League Opening */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ Basketball League Opening</h3>
+    <p className="text-green-700 text-sm mb-3">Opened December 21 with a parade and games — a celebration of unity, sportsmanship, and barkada spirit.</p>
+    <Link href="/achievements/basketball-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
+
+  {/* Bloodletting Activity */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ Bloodletting Activity</h3>
+    <p className="text-green-700 text-sm mb-3">Over 70 donors participated in saving lives through blood donation, supported by the City Health Office.</p>
+    <Link href="/achievements/bloodletting-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
+
+  {/* Anti-Illegal Drugs Symposium */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ Anti-Illegal Drugs Symposium</h3>
+    <p className="text-green-700 text-sm mb-3">A youth-centered event that raised awareness and encouraged action against illegal drug use.</p>
+    <Link href="/achievements/anti-drugs-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
+
+  {/* KK Assembly & Mental Health Talk */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ KK Assembly & Mental Health Talk</h3>
+    <p className="text-green-700 text-sm mb-3">Held in October, this event promoted mental wellness and presented youth plans for progress.</p>
+    <Link href="/achievements/kk-assembly-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
+
+  {/* Linggo ng Kabataan 2024 */}
+  <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <h3 className="text-xl font-bold text-green-800 mb-2">✔ Linggo ng Kabataan 2024</h3>
+    <p className="text-green-700 text-sm mb-3">A full week of contests and youth empowerment activities under the theme “Pag-usbong ng Kakayahan at Talento.”</p>
+    <Link href="/achievements/linggo-ng-kabataan-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
+  </div>
         <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
-          Placeholder for 2024 projects...
+          Additional 2024 achievements coming soon...
         </div>
-        <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
-          Coming soon...
-        </div>
-      </div>
+</div>
 
       {/* ==== 2023 ==== */}
       <h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2023</h2>

@@ -16,7 +16,7 @@ export default function Edukit2024Page() {
         ← Back to Achievements
       </Link>
 
-      <h1 className="text-3xl font-bold text-green-900 mb-4">2024 SK Project EduKit</h1>
+      <h1 className="text-3xl font-bold text-green-900 mb-4">2025 SK Project EduKit</h1>
 <p className="text-green-800 text-sm mb-4">
   The SK EduKit Project successfully provided essential school supplies to support the education of local youth in Barangay Taloc. The first wave of distribution was held at Ramon Torres Taloc National High School (RTTNHS), where 50 EduKit packages were given to selected students. These kits contained basic educational materials aimed at helping students prepare for the upcoming school year.
 </p>

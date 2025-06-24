@@ -5,15 +5,23 @@ export default function Home() {
   return (
     <div className="min-h-screen font-poppins scroll-smooth">
       {/* 🔵 NAVIGATION BAR */}
-      <nav className="bg-green-900 text-white p-4 shadow-md sticky top-0 z-50"> 
-        <ul className="flex flex-wrap justify-end gap-6 text-sm sm:text-base">
-          <li><a href="#home" className="hover:underline">Home</a></li>
-          <li><a href="#about" className="hover:underline">About Us</a></li>
-          <li><a href="#events" className="hover:underline">Upcoming Events</a></li>
-          <li><a href="#gallery" className="hover:underline">Gallery</a></li>
-          <li><a href="#contact" className="hover:underline">Contact</a></li>
-        </ul>
-      </nav> 
+      <nav className="bg-green-900 text-white shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap">
+          {/* Logo / Brand Name */}
+          <a href="#home" className="text-lg sm:text-xl font-semibold tracking-wide hover:opacity-90 transition">
+            SK Taloc
+          </a>
+
+          {/* Navigation Links */}
+          <ul className="flex flex-wrap gap-4 sm:gap-6 text-sm sm:text-base">
+            <li><a href="#home" className="hover:text-green-200 transition duration-200">Home</a></li>
+            <li><a href="#about" className="hover:text-green-200 transition duration-200">About Us</a></li>
+            <li><a href="#events" className="hover:text-green-200 transition duration-200">Upcoming Events</a></li>
+            <li><a href="#gallery" className="hover:text-green-200 transition duration-200">Gallery</a></li>
+            <li><a href="#contact" className="hover:text-green-200 transition duration-200">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
       {/* 🔵 HOME */}
       <section id="home" className="min-h-screen bg-gradient-to-br from-green-100 via-white to-green-100 flex items-center justify-center flex-col text-center p-8">
@@ -87,45 +95,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 🔵 EVENTS */}
-      <section id="events" className="min-h-screen bg-green-100 flex items-center justify-center flex-col p-8 text-center text-green-900">
-        <h2 className="text-3xl font-bold mb-8">📅 Upcoming Events</h2>
-        <p className="text-green-800 max-w-2xl mb-8">Check out our exciting upcoming activities aimed to engage, empower, and unite the youth of Barangay Taloc. Tap or hover on each card to explore details.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
-          <div className="bg-white rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 cursor-pointer">
-            <h3 className="text-xl font-bold text-green-800 mb-2">🏳️‍🌈 Pride Month Celebration</h3>
-            <p className="text-sm text-green-700">Join us in celebrating diversity and inclusivity this <strong>June 29, 2025</strong>. Expect vibrant activities, speakers, and performances dedicated to embracing identity and love.</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 cursor-pointer">
-            <h3 className="text-xl font-bold text-green-800 mb-2">🌟 Y'Taloc Membership Opening</h3>
-            <p className="text-sm text-green-700">Calling all youth leaders! Be part of a passionate and purpose-driven organization. Enrollment for new members is now open. Don't miss the chance to lead and serve!</p>
-          </div>
-          <div className="bg-white rounded-xl shadow-lg p-6 transition-transform transform hover:scale-105 cursor-pointer">
-            <h3 className="text-xl font-bold text-green-800 mb-2">🎉 Linggo ng Kabataan</h3>
-            <p className="text-sm text-green-700">Celebrate youth empowerment with week-long activities filled with competitions, workshops, and community initiatives. Details will be announced soon. Stay tuned!</p>
-          </div>
-    <a href="/achievements" className="hover:underline">View all Achievements</a>
-        </div>
-      </section>
+{/* 🔵 EVENTS */}
+<section id="events" className="min-h-screen bg-green-100 py-16 px-6 text-green-900 text-center">
+  <h2 className="text-4xl font-extrabold mb-4">📅 Upcoming Events</h2>
+  <p className="text-green-800 max-w-2xl mx-auto mb-12">
+    Check out our upcoming activities designed to empower and unite the youth of Barangay Taloc.
+    Hover over each card to learn more.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    {/* Card 1 */}
+    <div className="bg-white border border-green-200 rounded-2xl shadow-md p-6 transition-transform transform hover:-translate-y-1 hover:shadow-lg">
+      <h3 className="text-xl font-semibold text-green-800 mb-2">🏳️‍🌈 Pride Month Celebration</h3>
+      <p className="text-sm text-green-700 leading-relaxed">
+        Join us this <strong>June 29, 2025</strong> to celebrate diversity with vibrant activities, speakers, and performances celebrating identity and love.
+      </p>
+    </div>
+    {/* Card 2 */}
+    <div className="bg-white border border-green-200 rounded-2xl shadow-md p-6 transition-transform transform hover:-translate-y-1 hover:shadow-lg">
+      <h3 className="text-xl font-semibold text-green-800 mb-2">🌟 Y'Taloc Membership Opening</h3>
+      <p className="text-sm text-green-700 leading-relaxed">
+        Be part of our youth organization! Applications are now open to future leaders ready to serve and inspire our community.
+      </p>
+    </div>
+    {/* Card 3 */}
+    <div className="bg-white border border-green-200 rounded-2xl shadow-md p-6 transition-transform transform hover:-translate-y-1 hover:shadow-lg">
+      <h3 className="text-xl font-semibold text-green-800 mb-2">🎉 Linggo ng Kabataan</h3>
+      <p className="text-sm text-green-700 leading-relaxed">
+        Celebrate youth empowerment with fun competitions, learning workshops, and community projects. Stay tuned for full schedule!
+      </p>
+    </div>
+  </div>
 
-      {/* 🔵 GALLERY */}
-      <section id="gallery" className="min-h-screen bg-white flex items-center justify-center flex-col p-8 text-center text-green-950">
-        <h2 className="text-3xl font-bold mb-6">Achievements & Past Activities</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
-          <div className="bg-green-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-            <Image src="/Ytaloc.jpg" alt="Y'Taloc Xperience" width={300} height={200} className="rounded-md" />
-            <p className="mt-3 text-sm font-medium text-green-800">Y'Taloc Xperience: Leadership and Team-Building Camp</p>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-            <Image src="/summerj.jpg" alt="Summer Job" width={300} height={200} className="rounded-md" />
-            <p className="mt-3 text-sm font-medium text-green-800">Summer Job Pahabol 2025: Youth Employment Initiative</p>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-            <Image src="/edukit.jpg" alt="EDUKIT" width={300} height={200} className="rounded-md" />
-            <p className="mt-3 text-sm font-medium text-green-800">Project Edukit Year 2: School Supply Distribution</p>
-          </div>
-        </div>
-      </section>
+  {/* View All Button */}
+  <div className="mt-12">
+    <a
+      href="/achievements"
+      className="inline-block bg-green-700 text-white text-sm px-5 py-2 rounded-full hover:bg-green-800 transition"
+    >
+      View All Achievements →
+    </a>
+  </div>
+</section>
+
+{/* 🔵 GALLERY */}
+<section id="gallery" className="min-h-screen bg-white py-16 px-6 text-green-950 text-center">
+  <h2 className="text-4xl font-extrabold mb-4"> Achievements & Past Activities</h2>
+  <p className="text-green-700 max-w-xl mx-auto mb-12">
+    Here's a glimpse of our recent initiatives that empowered and inspired the youth of our barangay.
+  </p>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    {/* Gallery Item 1 */}
+    <div className="bg-green-50 border rounded-xl p-4 shadow-sm hover:shadow-md transition">
+      <Image src="/Ytaloc.jpg" alt="Y'Taloc Xperience" width={300} height={200} className="rounded-lg mx-auto" />
+      <p className="mt-4 text-sm font-medium text-green-800">
+        Y'Taloc Xperience: Leadership and Team-Building Camp
+      </p>
+    </div>
+    {/* Gallery Item 2 */}
+    <div className="bg-green-50 border rounded-xl p-4 shadow-sm hover:shadow-md transition">
+      <Image src="/summerj.jpg" alt="Summer Job" width={300} height={200} className="rounded-lg mx-auto" />
+      <p className="mt-4 text-sm font-medium text-green-800">
+        Summer Job Pahabol 2025: Youth Employment Initiative
+      </p>
+    </div>
+    {/* Gallery Item 3 */}
+    <div className="bg-green-50 border rounded-xl p-4 shadow-sm hover:shadow-md transition">
+      <Image src="/edukit.jpg" alt="EDUKIT" width={300} height={200} className="rounded-lg mx-auto" />
+      <p className="mt-4 text-sm font-medium text-green-800">
+        Project Edukit Year 2: School Supply Distribution
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* 🔵 CONTACT */}
       <section id="contact" className="min-h-screen bg-green-50 flex items-center justify-center flex-col p-8 text-center text-green-900">
