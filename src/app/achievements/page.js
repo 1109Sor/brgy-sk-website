@@ -13,36 +13,54 @@ export default function AchievementsPage() {
         Achievements & Accomplishment Reports
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {/* Card 1 */}
+      {/* ==== 2025 ==== */}
+      <h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2025</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        {/* 2025 EduKit */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-          <h2 className="text-xl font-bold text-green-800 mb-2">✔ 2024 SK Project EduKit</h2>
+          <h3 className="text-xl font-bold text-green-800 mb-2">✔ 2025 SK Project EduKit</h3>
           <p className="text-green-700 text-sm mb-3">Distributed over 500 school kits to Taloc youth. A continued commitment to education support.</p>
           <Link href="/achievements/edukit-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
 
-        {/* Card 2 */}
+        {/* 2025 Summer Job */}
         <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-          <h2 className="text-xl font-bold text-green-800 mb-2">✔ Summer Job Program 2024</h2>
+          <h3 className="text-xl font-bold text-green-800 mb-2">✔ Summer Job Program 2025</h3>
           <p className="text-green-700 text-sm mb-3">Provided job experience and allowance to more than 50 students during summer break.</p>
           <Link href="/achievements/summer-job-2024" className="text-sm text-green-600 hover:underline">Read More</Link>
         </div>
 
-        {/* Card 3 */}
-        <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-          <h2 className="text-xl font-bold text-green-800 mb-2">✔ Youth Leadership Camp 2023</h2>
-          <p className="text-green-700 text-sm mb-3">A 3-day camp that trained future leaders through workshops, team-building, and civic immersion.</p>
-          <Link href="/achievements/youth-camp-2023" className="text-sm text-green-600 hover:underline">Read More</Link>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
-          <h2 className="text-xl font-bold text-green-800 mb-2">✔ Barangay Clean-Up Drive</h2>
-          <p className="text-green-700 text-sm mb-3">A successful initiative that mobilized over 100 youth volunteers for environmental action.</p>
-          <Link href="/achievements/clean-up-drive" className="text-sm text-green-600 hover:underline">Read More</Link>
+        {/* Dummy for 2025 */}
+        <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
+          Placeholder for future 2025 projects...
         </div>
       </div>
 
+      {/* ==== 2024 ==== */}
+      <h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2024</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
+          Placeholder for 2024 projects...
+        </div>
+        <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
+          Coming soon...
+        </div>
+      </div>
+
+      {/* ==== 2023 ==== */}
+      <h2 className="text-2xl font-semibold text-green-900 mb-4 mt-10 border-b pb-1">2023</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+        <div className="bg-white border border-green-200 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6">
+          <h3 className="text-xl font-bold text-green-800 mb-2">✔ Youth Leadership Camp 2023</h3>
+          <p className="text-green-700 text-sm mb-3">A 3-day camp that trained future leaders through workshops, team-building, and civic immersion.</p>
+          <Link href="/achievements/youth-camp-2023" className="text-sm text-green-600 hover:underline">Read More</Link>
+        </div>
+        <div className="bg-white border border-green-100 rounded-xl p-6 text-green-400 border-dashed text-sm">
+          Additional 2023 achievements coming soon...
+        </div>
+      </div>
+
+      {/* Footer Contact */}
       <div className="mt-16 text-center">
         <p className="text-green-800 text-sm">
           Want to request a full PDF of our annual reports? Contact us at{" "}

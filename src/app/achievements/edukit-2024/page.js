@@ -17,10 +17,13 @@ export default function Edukit2024Page() {
       </Link>
 
       <h1 className="text-3xl font-bold text-green-900 mb-4">2024 SK Project EduKit</h1>
-      <p className="text-green-800 text-sm mb-8">
-        In 2024, the SK Taloc distributed over 500 school kits to students. This project aimed to assist underprivileged youth by providing basic school supplies...
-      </p>
+<p className="text-green-800 text-sm mb-4">
+  The SK EduKit Project successfully provided essential school supplies to support the education of local youth in Barangay Taloc. The first wave of distribution was held at Ramon Torres Taloc National High School (RTTNHS), where 50 EduKit packages were given to selected students. These kits contained basic educational materials aimed at helping students prepare for the upcoming school year.
+</p>
 
+<p className="text-green-800 text-sm mb-8">
+  Following the initial rollout, a second wave of distribution was conducted at the Barangay Hall of Taloc, where an additional 250 EduKit packages were distributed to students from different areas of the barangay. In total, 300 EduKit packages were given out, demonstrating the Sangguniang Kabataan’s commitment to supporting youth through accessible and meaningful educational assistance programs.
+</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {imageNames.map((name, index) => (
           <div key={index} className="w-full h-64 relative rounded-lg overflow-hidden border">
