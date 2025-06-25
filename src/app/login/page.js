@@ -8,9 +8,36 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const router = useRouter();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    alert(`Logging in with email: ${email}`);
+
+    try {
+      const res = await fetch("http://localhost:4000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const contentType = res.headers.get("content-type");
+
+      if (contentType && contentType.includes("application/json")) {
+        const data = await res.json();
+
+        if (res.ok) {
+          alert("✅ Login successful!");
+          router.push("/dashboard"); // ✅ redirect to dashboard
+        } else {
+          alert(`❌ ${data.message || "Login failed."}`);
+        }
+      } else {
+        const text = await res.text();
+        console.error("❌ Unexpected response:", text);
+        alert("❌ Server error: Expected JSON but got something else.");
+      }
+    } catch (err) {
+      console.error("❌ Login error:", err);
+      alert("❌ Server error. Please try again.");
+    }
   };
 
   return (
@@ -25,15 +52,12 @@ export default function LoginPage() {
       </div>
 
       <div className="bg-white w-full max-w-md rounded-2xl shadow-xl p-8 sm:p-10 space-y-6">
-        {/* Title */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-green-900">Welcome Back</h1>
           <p className="text-green-700 mt-1 text-sm">Log in to your SK Taloc account</p>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleLogin} className="space-y-5">
-          {/* Email */}
           <div>
             <label className="block text-sm font-medium text-green-800 mb-1">Email Address</label>
             <input
@@ -46,7 +70,6 @@ export default function LoginPage() {
             />
           </div>
 
-          {/* Password */}
           <div>
             <label className="block text-sm font-medium text-green-800 mb-1">Password</label>
             <input
@@ -59,7 +82,6 @@ export default function LoginPage() {
             />
           </div>
 
-          {/* Login Button */}
           <button
             type="submit"
             className="w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-2 rounded-lg transition-all shadow-sm hover:shadow-md"
@@ -68,7 +90,6 @@ export default function LoginPage() {
           </button>
         </form>
 
-        {/* Create Account Link */}
         <div className="text-sm text-center text-green-700">
           Don&apos;t have an account?{" "}
           <Link href="/register" className="text-green-800 font-semibold hover:underline">
