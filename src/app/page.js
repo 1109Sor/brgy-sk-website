@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import "@fontsource/poppins";
 
 export default function Home() {
@@ -83,51 +84,61 @@ export default function Home() {
         <p className="max-w-3xl mb-6">
           SK Taloc, led by SK Chairman Rowel A. Capillo created a youth-led organization called "Y'Taloc" spearheaded by the SK Treasurer and Engineer Krischan S. Gelasan that aims to build empowered, responsible, and service-oriented young leaders.
         </p>
+<div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl">
+  <Link href="/pages/details/rowel" className="flex flex-col items-center md:w-1/3 hover:opacity-90 transition">
+    <Image src="/rowel.jpg" alt="Rowel Capillo" width={140} height={140} className="rounded-full" />
+    <p className="mt-4 font-bold text-green-900 text-center text-lg">
+      SK Chairman<br />Rowel A. Capillo
+    </p>
+  </Link>
 
-        <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl">
-          <div className="flex flex-col items-center md:w-1/3">
-            <Image src="/rowel.jpg" alt="Rowel Capillo" width={140} height={140} className="rounded-full" />
-            <p className="mt-4 font-bold text-green-900 text-center text-lg"> SK Chairman<br />Rowel A. Capillo</p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:w-2/3">
-            <div className="flex flex-col items-center">
-              <Image src="/kevin.jpg" alt="Kevin Carmona" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Kevin H. Carmona</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/hannah.jpg" alt="Hannah Lobrido" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Hannah Sofea T. Lobrido</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/earl.jpg" alt="Earl Paildan" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Earl John M. Paildan</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/adrian.jpg" alt="Adrian Cobrador" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Adrian M. Cobrador</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/juliane.jpg" alt="Juliane Cuayson" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Juliane P. Cuayson</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/martin.jpg" alt="Martin Malunes" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Martin B. Malunes</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/katlene.jpg" alt="Katlene Paredes" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Katlene Ann M. Paredes</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/krischan.jpg" alt="Krischan Gelasan" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Treasurer<br />Krischan S. Gelasan</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image src="/danica.jpg" alt="Danica Seraspi" width={100} height={100} className="rounded-full" />
-              <p className="mt-2 text-green-800 text-center text-sm">SK Secretary<br />Danica Marie Q. Seraspi</p>
-            </div>
-          </div>
-        </div>
+  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:w-2/3">
+    <Link href="/pages//details/kevin" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/kevin.jpg" alt="Kevin Carmona" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Kevin H. Carmona</p>
+    </Link>
+
+    <Link href="/pages//details/hannah" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/hannah.jpg" alt="Hannah Lobrido" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Hannah Sofea T. Lobrido</p>
+    </Link>
+
+    <Link href="/pages//details/earl" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/earl.jpg" alt="Earl Paildan" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Earl John M. Paildan</p>
+    </Link>
+
+    <Link href="/pages//details/adrian" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/adrian.jpg" alt="Adrian Cobrador" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Adrian M. Cobrador</p>
+    </Link>
+
+    <Link href="/pages//details/juliane" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/juliane.jpg" alt="Juliane Cuayson" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Juliane P. Cuayson</p>
+    </Link>
+
+    <Link href="/pages//details/martin" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/martin.jpg" alt="Martin Malunes" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Martin B. Malunes</p>
+    </Link>
+
+    <Link href="/pages//details/katlene" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/katlene.jpg" alt="Katlene Paredes" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Kagawad<br />Katlene Ann M. Paredes</p>
+    </Link>
+
+    <Link href="/pages//details/krischan" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/krischan.jpg" alt="Krischan Gelasan" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Treasurer<br />Krischan S. Gelasan</p>
+    </Link>
+
+    <Link href="/pages//details/danica" className="flex flex-col items-center hover:opacity-90 transition">
+      <Image src="/danica.jpg" alt="Danica Seraspi" width={100} height={100} className="rounded-full" />
+      <p className="mt-2 text-green-800 text-center text-sm">SK Secretary<br />Danica Marie Q. Seraspi</p>
+    </Link>
+  </div>
+</div>
       </section>
 
 {/* 🔵 EVENTS */}
