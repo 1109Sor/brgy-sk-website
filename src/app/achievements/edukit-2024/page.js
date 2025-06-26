@@ -44,7 +44,7 @@ export default function Edukit2024Page() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 text-sm text-green-800">
           <div>
-            <p className="font-medium">Rowel A. Capillo</p>
+            <p className="font-medium">Rowel A. Capillo, RCrim</p>
             <p className="text-xs text-green-600">SK Chairman</p>
           </div>
 
@@ -54,7 +54,7 @@ export default function Edukit2024Page() {
           </div>
 
           <div>
-            <p className="font-medium">Hannah S. Lobrido</p>
+            <p className="font-medium">Hannah Sofea T. Lobrido</p>
             <p className="text-xs text-green-600">SK Kagawad</p>
           </div>
 
@@ -79,12 +79,12 @@ export default function Edukit2024Page() {
           </div>
 
           <div>
-            <p className="font-medium">Krischan S. Gelasan</p>
+            <p className="font-medium">Engr. Krischan S. Gelasan</p>
             <p className="text-xs text-green-600">SK Treasurer</p>
           </div>
 
           <div>
-            <p className="font-medium">Danica M. Seraspi</p>
+            <p className="font-medium">Danica Marie Q. Seraspi, CHRA</p>
             <p className="text-xs text-green-600">SK Secretary</p>
           </div>
         </div>
